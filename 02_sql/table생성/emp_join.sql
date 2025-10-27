@@ -1,45 +1,45 @@
--- CREATE DATABASE hr_join;
--- USE  hr_join;
+-- CREATE DATABASE IF NOT EXISTS hr_join;
+-- USE hr_join;
 
--- set foreign_key_checks=0;
+-- SET foreign_key_checks=0;
 
--- ------------------------------------------------------
--- DDL FOR DEPT
--- 부서 테이블
--- ------------------------------------------------------
-DROP TABLE IF EXISTS dept;
-CREATE TABLE dept(
-    dept_id 	INT PRIMARY KEY,
-    dept_name 	VARCHAR(100) NOT NULL,
-    loc 		VARCHAR(100) NOT NULL
-);
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (10,'Administration','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (20,'Marketing','New York');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (30,'Purchasing','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (40,'Human Resources','New York');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (50,'Shipping','San Francisco');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (60,'IT','San Francisco');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (70,'Public Relations','New York');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (80,'Sales','New York');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (90,'Executive','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (100,'Finance','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (110,'Accounting','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (120,'Treasury','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (130,'Corporate Tax','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (140,'Control And Credit','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (150,'Shareholder Services','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (160,'Benefits','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (170,'Manufacturing','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (180,'Construction','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (190,'Contracting','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (200,'Operations','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (210,'IT Support','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (220,'NOC','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (230,'IT Helpdesk','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (240,'Government Sales','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (250,'Retail Sales','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (260,'Recruiting','Seattle');
-INSERT INTO dept (dept_id,dept_name,loc) VALUES (270,'Payroll','Seattle');
+-- -- ------------------------------------------------------
+-- -- DDL FOR DEPT
+-- -- 부서 테이블
+-- -- ------------------------------------------------------
+-- DROP TABLE IF EXISTS dept;
+-- CREATE TABLE dept(
+--     dept_id 	INT PRIMARY KEY,
+--     dept_name 	VARCHAR(100) NOT NULL,
+--     loc 		VARCHAR(100) NOT NULL
+-- );
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (10,'Administration','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (20,'Marketing','New York');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (30,'Purchasing','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (40,'Human Resources','New York');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (50,'Shipping','San Francisco');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (60,'IT','San Francisco');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (70,'Public Relations','New York');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (80,'Sales','New York');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (90,'Executive','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (100,'Finance','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (110,'Accounting','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (120,'Treasury','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (130,'Corporate Tax','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (140,'Control And Credit','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (150,'Shareholder Services','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (160,'Benefits','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (170,'Manufacturing','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (180,'Construction','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (190,'Contracting','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (200,'Operations','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (210,'IT Support','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (220,'NOC','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (230,'IT Helpdesk','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (240,'Government Sales','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (250,'Retail Sales','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (260,'Recruiting','Seattle');
+-- INSERT INTO dept (dept_id,dept_name,loc) VALUES (270,'Payroll','Seattle');
 
 
 
